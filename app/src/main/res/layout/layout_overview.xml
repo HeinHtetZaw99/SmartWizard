@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/red_gradient"
+                >
+
+                <TextView
+                    android:id="@+id/temp_title"
+                    style="@style/TitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/marginL"
+                    android:layout_alignParentTop="true"
+                    android:text="Temperature" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/anim_view"
+                    android:layout_width="60dp"
+                    android:layout_height="120dp"
+                    app:lottie_autoPlay="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/marginL"
+                    app:lottie_fileName="temperature_transparent.json"
+                    app:lottie_loop="true" />
+
+                <TextView
+                    android:id="@+id/temperatureTv"
+                    style="@style/ValueTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/marginL"
+                    android:layout_below="@id/temp_title"
+                    android:text="32" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@id/temperatureTv"
+                    android:text="o"
+                    android:layout_alignTop="@id/temperatureTv"
+                    android:layout_marginTop="@dimen/marginS"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSizeS"
+                    />
+                <TextView
+                    android:id="@+id/temp_unit"
+                    style="@style/TitleStyle"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/marginS"
+                    android:layout_alignBottom="@id/temperatureTv"
+                    android:layout_marginBottom="@dimen/marginM"
+                    android:layout_toRightOf="@id/temperatureTv"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginEnd="@dimen/marginS"
+                    android:text="C" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@drawable/blue_gradient"
+                >
+
+                <TextView
+                    android:id="@+id/humid_title"
+                    style="@style/TitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/marginL"
+                    android:text="Humidity" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/humid_anim_view"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:lottie_autoPlay="true"
+                    android:layout_alignParentEnd="true"
+                    app:lottie_fileName="humidity_transparent.json"
+                    android:layout_margin="10dp"
+                    app:lottie_loop="true" />
+
+                <TextView
+                    android:id="@+id/humidityTv"
+                    style="@style/ValueTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/humid_title"
+                    android:layout_marginStart="@dimen/marginL"
+                    android:text="0.6" />
+
+                <TextView
+
+                    style="@style/TitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/marginS"
+                    android:layout_alignBottom="@id/humidityTv"
+                    android:layout_marginBottom="@dimen/marginL"
+                    android:layout_toRightOf="@id/humidityTv"
+                    android:text="%" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+          >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                >
+
+                <TextView
+                    android:id="@+id/water_title"
+                    style="@style/TitleStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/marginL"
+                    android:text="Water Level" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/water_anim_view"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    app:lottie_autoPlay="true"
+                    android:layout_margin="15dp"
+                    android:layout_below="@id/water_title"
+                    app:lottie_fileName="water.json"
+                    app:lottie_loop="true" />
+
+                <TextView
+                    android:id="@+id/waterTv"
+                    style="@style/ValueTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/water_anim_view"
+                    android:layout_marginTop="@dimen/marginXL"
+                    android:layout_toRightOf="@id/water_anim_view"
+                    android:text="32" />
+
+                <TextView
+
+                    style="@style/TitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/marginS"
+                    android:layout_alignBottom="@id/waterTv"
+
+                    android:layout_toRightOf="@id/waterTv"
+                    android:text="%" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+
+                <TextView
+                    android:id="@+id/light_title"
+                    style="@style/TitleStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/marginL"
+                    android:text="Light" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/light_anim_view"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    app:lottie_autoPlay="true"
+                    android:layout_below="@id/light_title"
+                    app:lottie_fileName="sun.json"
+                    app:lottie_loop="true" />
+
+                <TextView
+                    android:id="@+id/lightTv"
+                    style="@style/ValueTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/light_anim_view"
+                    android:layout_marginTop="@dimen/marginXL"
+                    android:layout_toRightOf="@id/light_anim_view"
+                    android:text="0.6" />
+
+                <TextView
+
+                    style="@style/TitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/marginS"
+                    android:layout_alignBottom="@id/lightTv"
+                    android:layout_toRightOf="@id/lightTv"
+                    android:text="%" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

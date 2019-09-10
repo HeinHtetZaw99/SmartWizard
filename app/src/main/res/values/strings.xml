@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">SmartWizard</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_history">History</string>
+    <string name="menu_account">Account</string>
+    <string name="btn_txt_channel_setting">Channel Setting</string>
+    <string name="btn_txt_log_out">Log Out</string>
+    <string name="btn_txt_account_setting">Account Setting</string>
+    <string name="title_msg_select_date">Select Date</string>
+    <string name="tab_title_sensor_history">Sensors</string>
+    <string name="tab_title_device_log_history">Device Log</string>
+    <string name="title_msg_emptyView">Oops ! No Network Connection</string>
+    <string name="title_msg_try_again">Check your network connection and try again</string>
+    <string name="title_msg_unexpected_error_occured">Oops ! Unexpected Error Occurred !</string>
+    <string name="title_msg_try_again_for_error">Please Try Again</string>
+    <string name="btn_txt_emptyView">Refresh</string>
+    <string name="error_msg_no_network">No Internet Connection</string>
+    <string name="button_msg_ok">OK</string>
+    <string name="title_sample_chart">Title</string>
+    <string name="map_label_explanation">Label</string>
+    <string name="btn_text_exit">Exit</string>
+    <string name="button_msg_retry">Retry</string>
+    <string name="error_msg_no_network_desc">Please check your network connection and try again !</string>
+    <string name="title_msg_noti_title">This is notification title</string>
+    <string name="title_msg_noti_message">This is notification message</string>
+    <string name="default_notification_channel_id">notification_channel_id</string>
+
+</resources>

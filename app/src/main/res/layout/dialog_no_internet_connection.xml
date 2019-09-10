@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="@dimen/marginXL"
+            android:src="@drawable/empty_view" />
+
+        <TextView
+            android:id="@+id/errorTextView"
+            style="@style/BoldXL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView"
+            android:layout_marginTop="@dimen/marginXL"
+            android:gravity="center"
+            android:text="@string/error_msg_no_network"
+            android:textColor="@color/colorRed" />
+
+        <TextView
+            android:id="@+id/errorDescriptionTextView"
+            style="@style/RegularN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/errorTextView"
+            android:layout_marginStart="@dimen/marginXL"
+            android:layout_marginTop="@dimen/marginS"
+            android:layout_marginEnd="@dimen/marginXL"
+            android:gravity="center"
+            android:padding="@dimen/marginL"
+            android:text="@string/error_msg_no_network_desc"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/retryBtn"
+            style="@style/BookNStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.2"
+            android:layout_below="@id/errorDescriptionTextView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/marginXL"
+            android:layout_marginEnd="@dimen/marginXL"
+            android:maxWidth="100dp"
+            android:layout_marginBottom="@dimen/marginXL"
+            android:background="@drawable/button_bg"
+            android:foreground="?selectableItemBackground"
+            android:gravity="center"
+            android:minWidth="100dp"
+            android:padding="@dimen/marginM"
+            android:text="@string/button_msg_retry"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/exitBtn"
+            style="@style/BookNStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/errorTextView"
+            android:layout_alignTop="@id/retryBtn"
+            android:layout_alignBottom="@id/retryBtn"
+            android:layout_alignParentStart="true"
+            android:minWidth="80dp"
+            android:layout_marginStart="@dimen/marginXL"
+            android:drawablePadding="@dimen/marginS"
+            android:foreground="?selectableItemBackground"
+            android:gravity="center"
+            android:padding="@dimen/marginM"
+            android:text="@string/btn_text_exit"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

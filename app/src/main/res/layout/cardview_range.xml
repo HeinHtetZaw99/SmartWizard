@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        style="@style/CardViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/marginL"
+            >
+
+            <pl.pawelkleczkowski.customgauge.CustomGauge
+                android:id="@+id/gaugeView"
+                android:layout_width="200dp"
+                android:layout_height="160dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/marginL"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="20dp"
+
+                app:gaugeEndValue="1000"
+                app:gaugePointEndColor="@color/colorPrimary"
+                app:gaugePointSize="100"
+                app:gaugePointStartColor="@color/colorPrimary"
+                app:gaugeStartAngle="135"
+                app:gaugeDividerColor="@color/colorRed"
+
+                app:gaugeStartValue="0"
+                app:gaugeStrokeCap="ROUND"
+                app:gaugeStrokeColor="@color/light_grey"
+                app:gaugeStrokeWidth="12dp"
+                app:gaugeSweepAngle="270" />
+
+            <TextView
+                android:id="@+id/statusTv"
+                style="@style/RegularS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@id/gaugeView"
+                android:layout_margin="@dimen/marginM"
+                android:gravity="center"
+                android:text="Current Status is in Optimal Conditions"
+                android:textColor="@color/colorPrimaryDark" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="120dp">
+
+
+            <TextView
+                android:id="@+id/numberTv"
+                style="@style/SemiBoldXXXL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:text="100"
+
+                android:textColor="@color/colorPrimaryDark" />
+            <TextView
+                android:id="@+id/numberUnitTv"
+                style="@style/RegularS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/marginS"
+                android:layout_alignBaseline="@id/numberTv"
+                android:layout_toRightOf="@id/numberTv"
+                android:text="units"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorPrimaryDark" />
+            </RelativeLayout>
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/statusTv"
+                android:layout_centerHorizontal="true"
+                android:weightSum="4">
+
+                <CheckBox
+                    android:id="@+id/temperatureBtn"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="@dimen/marginM"
+                    android:layout_weight="1"
+                    android:background="@drawable/checkbox_temperature"
+                    android:button="@null" />
+
+                <CheckBox
+                    android:id="@+id/lightBtn"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="@dimen/marginM"
+                    android:layout_weight="1"
+                    android:background="@drawable/checkbox_light"
+                    android:button="@null"
+                    android:scaleType="center" />
+
+                <CheckBox
+                    android:id="@+id/humidityBtn"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="@dimen/marginM"
+                    android:layout_weight="1"
+                    android:background="@drawable/checkbox_humidity"
+                    android:button="@null" />
+
+                <CheckBox
+                    android:id="@+id/waterLvlBtn"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="@dimen/marginM"
+                    android:layout_weight="1"
+                    android:background="@drawable/checkbox_water"
+                    android:button="@null" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</layout>

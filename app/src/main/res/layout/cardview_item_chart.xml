@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="320dp"
+    android:layout_margin="@dimen/marginM"
+    android:orientation="vertical"
+    app:cardElevation="5dp">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/chartTitleTv"
+           android:background="@color/colorPrimary"
+           android:textColor="@color/white"
+           style="@style/SemiBoldN"
+           android:text="DH22 Data"
+           android:padding="@dimen/marginM"
+           android:gravity="center"
+           />
+       <com.anychart.AnyChartView
+           android:id="@+id/chartView"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"/>
+   </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

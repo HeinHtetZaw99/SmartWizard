@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/marginS">
+
+    <TextView
+        android:id="@+id/layoutTitleTv"
+        style="@style/SemiBoldN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginL"
+        android:gravity="center_vertical"
+        android:text="Actuators "
+        android:textColor="@color/colorPrimary"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/layoutRv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginM"
+        android:nestedScrollingEnabled="false"
+        android:layout_below="@id/layoutTitleTv" />
+
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".fragments.HistoryFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            style="@style/BoldXXL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/marginXL"
+            android:gravity="center"
+            android:text="History"
+            android:textColor="@color/white" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/datePickerBtn"
+        style="@style/SemiBoldN"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/marginL"
+        android:layout_marginBottom="@dimen/marginM"
+        android:background="@drawable/button_bg"
+        android:gravity="center"
+        android:text="25/6/2019"
+        android:textColor="@color/white" />
+
+    <!-- <androidx.recyclerview.widget.RecyclerView
+         android:id="@+id/historyDataRv"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+
+         tools:listitem="@layout/cardview_item_chart" />-->
+<!--    <com.google.android.material.tabs.TabLayout-->
+<!--        android:id="@+id/historyTabLayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="20dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:background="@color/white"-->
+<!--        app:tabGravity="center"-->
+<!--        app:tabIndicator="@drawable/tab_bar"-->
+<!--        app:tabMode="fixed"-->
+<!--        android:layout_marginTop="@dimen/marginM"-->
+<!--        android:layout_marginBottom="@dimen/marginM"-->
+<!--        app:tabPadding="@dimen/marginL"-->
+<!--        app:tabSelectedTextColor="@color/colorPrimaryDark"-->
+<!--        app:tabTextAppearance="@style/BoldN"-->
+<!--        app:tabTextColor="@color/grey" />-->
+
+<!--    <androidx.viewpager.widget.ViewPager-->
+<!--        android:id="@+id/historyViewPagerLayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent" />-->
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+
+        android:layout_margin="4dp"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <com.anychart.AnyChartView
+            android:id="@+id/sensorChartView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            />
+        <ProgressBar
+            android:id="@+id/progress_Bar_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/CardViewStyle"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/marginS"
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iconImageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="@dimen/marginL"
+            android:src="@drawable/ic_fan" />
+
+        <TextView
+            android:id="@+id/deviceNameTv"
+            style="@style/SemiBoldL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iconImageView"
+            android:layout_marginStart="@dimen/marginXL"
+            android:layout_marginEnd="@dimen/marginXL"
+            android:text="Fans"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/deviceStatusTv"
+            style="@style/RegularS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/deviceNameTv"
+            android:layout_marginStart="@dimen/marginXL"
+            android:layout_marginEnd="@dimen/marginXL"
+
+            android:text="Off"
+            android:textColor="@color/colorPrimary" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/deviceStatusTv"
+            android:layout_alignStart="@id/deviceStatusTv"
+            android:thumbTint="@color/colorPrimary"
+            android:trackTint="@color/colorPrimaryDark"
+            android:layout_marginTop="@dimen/marginM"
+            android:layout_marginBottom="@dimen/marginL"
+            />
+
+        <ImageView
+            android:layout_width="10dp"
+           android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/marginXL"
+            android:layout_marginTop="@dimen/marginXL"
+            android:src="@drawable/circle_grey"
+            android:layout_height="10dp" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

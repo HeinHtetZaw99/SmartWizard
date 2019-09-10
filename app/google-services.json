@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "94318957235",
+    "firebase_url": "https://smart-wizard.firebaseio.com",
+    "project_id": "smart-wizard",
+    "storage_bucket": "smart-wizard.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:94318957235:android:de8369f09d424861",
+        "android_client_info": {
+          "package_name": "com.smartwizard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "94318957235-vq0albtpqqk7m9b690fao39qoae3bgn5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.smartwizard",
+            "certificate_hash": "5bc59ddd56f89511ec047d3ed74243d975cf56d3"
+          }
+        },
+        {
+          "client_id": "94318957235-fnfbcqk4425qqr5jr1c45gh76f4f0mdd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGzt80qdp7yNsQqbxfBaSaHPCQZkgUrzQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "94318957235-fnfbcqk4425qqr5jr1c45gh76f4f0mdd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

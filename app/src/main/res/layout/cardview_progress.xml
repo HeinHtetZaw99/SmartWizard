@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/CardViewStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true"
+            android:background="@color/white_transparent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/marginXL"
+            android:scaleType="center"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            android:src="@drawable/ic_loading" />
+
+        <TextView
+            android:id="@+id/titleTv"
+            style="@style/SemiBoldL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/divider"
+            android:layout_marginEnd="@dimen/marginXL"
+            android:layout_toRightOf="@id/imageView"
+            android:text="Operation in Process" />
+
+        <TextView
+            android:id="@+id/descriptionTv"
+            style="@style/RegularS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider"
+            android:layout_marginEnd="@dimen/marginXL"
+            android:layout_toRightOf="@id/imageView"
+            android:text="Light are on!" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+

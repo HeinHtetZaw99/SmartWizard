@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        style="@style/CardViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="@dimen/marginL">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="@dimen/marginM"
+
+                        android:button="@null"
+                        android:src="@drawable/ic_light_green" />
+
+                    <pl.pawelkleczkowski.customgauge.CustomGauge
+                        android:id="@+id/lightGaugeView"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/marginL"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="20dp"
+
+                        app:gaugeDividerColor="@color/colorRed"
+                        app:gaugeEndValue="1000"
+                        app:gaugePointEndColor="@color/colorPrimary"
+                        app:gaugePointSize="100"
+                        app:gaugePointStartColor="@color/colorPrimary"
+                        app:gaugeStartAngle="135"
+
+                        app:gaugeStartValue="0"
+                        app:gaugeStrokeCap="ROUND"
+                        app:gaugeStrokeColor="@color/light_grey"
+                        app:gaugeStrokeWidth="12dp"
+                        app:gaugeSweepAngle="270" />
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="120dp">
+
+
+                        <TextView
+                            android:id="@+id/lightNumberTv"
+                            style="@style/SemiBoldXL"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="center"
+                            android:text="100"
+
+                            android:textColor="@color/colorPrimaryDark" />
+
+                        <TextView
+                            android:id="@+id/lightNumberUnitTv"
+                            style="@style/RegularS"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@id/lightNumberTv"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginStart="@dimen/marginS"
+                            android:layout_marginTop="140dp"
+                            android:layout_toRightOf="@id/lightNumberTv"
+                            android:gravity="center"
+                            android:text="units"
+                            android:textColor="@color/colorPrimaryDark" />
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="@dimen/marginL">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="@dimen/marginM"
+                        android:button="@null"
+                        android:src="@drawable/ic_water_green" />
+
+                    <pl.pawelkleczkowski.customgauge.CustomGauge
+                        android:id="@+id/waterLvlGaugeView"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/marginL"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="20dp"
+
+                        app:gaugeDividerColor="@color/colorRed"
+                        app:gaugeEndValue="1000"
+                        app:gaugePointEndColor="@color/colorPrimary"
+                        app:gaugePointSize="100"
+                        app:gaugePointStartColor="@color/colorPrimary"
+                        app:gaugeStartAngle="135"
+
+                        app:gaugeStartValue="0"
+                        app:gaugeStrokeCap="ROUND"
+                        app:gaugeStrokeColor="@color/light_grey"
+                        app:gaugeStrokeWidth="12dp"
+                        app:gaugeSweepAngle="270" />
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="120dp">
+
+
+                        <TextView
+                            android:id="@+id/waterLvlNumberTv"
+                            style="@style/SemiBoldXL"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="center"
+                            android:text="100"
+
+                            android:textColor="@color/colorPrimaryDark" />
+
+                        <TextView
+                            android:id="@+id/waterLvlNumberUnitTv"
+                            style="@style/RegularS"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@id/waterLvlNumberTv"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginStart="@dimen/marginS"
+                            android:layout_marginTop="140dp"
+                            android:layout_toRightOf="@id/waterLvlNumberTv"
+                            android:gravity="center"
+                            android:text="units"
+                            android:textColor="@color/colorPrimaryDark" />
+
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="@dimen/marginL">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="@dimen/marginM"
+
+                        android:button="@null"
+                        android:src="@drawable/ic_temperature_green" />
+
+                    <pl.pawelkleczkowski.customgauge.CustomGauge
+                        android:id="@+id/temperatureGaugeView"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/marginL"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="20dp"
+
+                        app:gaugeDividerColor="@color/colorRed"
+                        app:gaugeEndValue="1000"
+                        app:gaugePointEndColor="@color/colorPrimary"
+                        app:gaugePointSize="100"
+                        app:gaugePointStartColor="@color/colorPrimary"
+                        app:gaugeStartAngle="135"
+
+                        app:gaugeStartValue="0"
+                        app:gaugeStrokeCap="ROUND"
+                        app:gaugeStrokeColor="@color/light_grey"
+                        app:gaugeStrokeWidth="12dp"
+                        app:gaugeSweepAngle="270" />
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="120dp">
+
+
+                        <TextView
+                            android:id="@+id/temperatureNumberTv"
+                            style="@style/SemiBoldXL"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="center"
+                            android:text="100"
+
+                            android:textColor="@color/colorPrimaryDark" />
+
+                        <TextView
+                            android:id="@+id/temperatureNumberUnitTv"
+                            style="@style/RegularS"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@id/temperatureNumberTv"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginStart="@dimen/marginS"
+                            android:layout_marginTop="140dp"
+                            android:layout_toRightOf="@id/temperatureNumberTv"
+                            android:gravity="center"
+                            android:text="units"
+                            android:textColor="@color/colorPrimaryDark" />
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="@dimen/marginL">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="@dimen/marginM"
+                        android:button="@null"
+                        android:src="@drawable/ic_humidity_green" />
+
+                    <pl.pawelkleczkowski.customgauge.CustomGauge
+                        android:id="@+id/humidityLvlGaugeView"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/marginL"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="20dp"
+
+                        app:gaugeDividerColor="@color/colorRed"
+                        app:gaugeEndValue="1000"
+                        app:gaugePointEndColor="@color/colorPrimary"
+                        app:gaugePointSize="100"
+                        app:gaugePointStartColor="@color/colorPrimary"
+                        app:gaugeStartAngle="135"
+
+                        app:gaugeStartValue="0"
+                        app:gaugeStrokeCap="ROUND"
+                        app:gaugeStrokeColor="@color/light_grey"
+                        app:gaugeStrokeWidth="12dp"
+                        app:gaugeSweepAngle="270" />
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="120dp">
+
+
+                        <TextView
+                            android:id="@+id/humidityLvlNumberTv"
+                            style="@style/SemiBoldXL"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="center"
+                            android:text="100"
+
+                            android:textColor="@color/colorPrimaryDark" />
+
+                        <TextView
+                            android:id="@+id/humidityLvlNumberUnitTv"
+                            style="@style/RegularS"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@id/humidityLvlNumberTv"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginStart="@dimen/marginS"
+                            android:layout_marginTop="140dp"
+                            android:layout_toRightOf="@id/humidityLvlNumberTv"
+                            android:gravity="center"
+                            android:text="units"
+                            android:textColor="@color/colorPrimaryDark" />
+
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

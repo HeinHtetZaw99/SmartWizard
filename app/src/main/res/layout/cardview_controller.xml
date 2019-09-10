@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.smartwizard.vos.ControlVO" />
+    </data>
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        style="@style/CardViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marginS"
+
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/deviceNameTv"
+                style="@style/SemiBoldN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/onOffBtn"
+                android:layout_marginStart="@dimen/marginXL"
+                android:layout_toStartOf="@id/onOffBtn"
+                android:layout_marginEnd="@dimen/marginM"
+                android:text="@{data.actuatorName}"
+                android:textColor="@color/colorPrimary" />
+
+            <RelativeLayout
+                android:id="@+id/dialerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/deviceNameTv"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/marginL">
+
+                <ImageView
+                    android:id="@+id/symbolImageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/marginM"
+
+                    android:button="@null"
+                    android:src="@drawable/ic_light_green" />
+
+                <pl.pawelkleczkowski.customgauge.CustomGauge
+                    android:id="@+id/lightGaugeView"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/marginL"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="20dp"
+
+                    app:gaugeDividerColor="@color/colorRed"
+                    app:gaugeEndValue="1000"
+                    app:gaugePointEndColor="@color/colorPrimary"
+                    app:gaugePointSize="100"
+                    app:gaugePointStartColor="@color/colorPrimary"
+                    app:gaugeStartAngle="135"
+
+                    app:gaugeStartValue="0"
+                    app:gaugeStrokeCap="ROUND"
+                    app:gaugeStrokeColor="@color/light_grey"
+                    app:gaugeStrokeWidth="12dp"
+                    app:gaugeSweepAngle="270" />
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="120dp">
+
+
+                    <TextView
+                        android:id="@+id/lightNumberTv"
+                        style="@style/SemiBoldXL"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="100"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:id="@+id/lightNumberUnitTv"
+                        style="@style/RegularS"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/lightNumberTv"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="@dimen/marginS"
+                        android:layout_marginTop="140dp"
+                        android:layout_toRightOf="@id/lightNumberTv"
+                        android:gravity="center"
+                        android:text="@{data.unit}"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <com.rm.rmswitch.RMSwitch
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/onOffBtn"
+                app:checked="true"
+                app:forceAspectRatio="false"
+                app:enabled="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/marginXL"
+                android:layout_marginEnd="@dimen/marginL"
+                app:switchDesign="android"
+                app:switchBkgCheckedColor="@color/colorPrimary"
+                app:switchBkgNotCheckedColor="@color/alizarin"
+                app:switchToggleCheckedColor="@color/colorPrimary"
+                app:switchToggleCheckedImage="@drawable/ic_power_settings"
+                app:switchToggleNotCheckedColor="@color/alizarin"
+                app:switchToggleNotCheckedImage="@drawable/ic_power_settings"/>
+
+
+          <!--  <Switch
+                android:id="@+id/onOffBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/marginXL"
+                android:layout_marginEnd="@dimen/marginL"
+                android:src="@drawable/circle_grey"
+
+                android:thumbTint="@color/thumbtint"
+                android:trackTint="@color/tracktint" />-->
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary55">
+
+
+
+    <ImageView
+        android:id="@+id/backgroundView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:scaleType="centerCrop"
+        android:scaleX="1.2"
+        android:elevation="5dp"
+        android:scaleY="1.1"
+        android:src="@drawable/ic_subtraction_18" />
+
+    <ImageView
+        android:id="@+id/logoView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/appQuoteTv"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:elevation="5dp"
+        android:src="@drawable/ic_icon" />
+
+    <TextView
+        android:id="@+id/appNameTv"
+        style="@style/BoldXXL"
+        android:elevation="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/appQuoteTv"
+        android:text="Smart Wizard"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/appQuoteTv"
+        style="@style/RegularN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/marginS"
+        android:gravity="center"
+        android:elevation="5dp"
+        android:text="Think smarter , grow smarter"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>
